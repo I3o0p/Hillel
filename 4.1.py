@@ -5,7 +5,6 @@ def move_zeros_to_end(lst):
             lst.append(i)
     return lst
 
-
 original_list = [0, 1, 0, 12, 3]
 original_list2 = [0]
 original_list3 = [1, 0, 13, 0, 0, 0, 5]
