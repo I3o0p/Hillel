@@ -1,6 +1,6 @@
 def create_new_list(lst):
     if len(lst) < 3:
-        raise ValueError("Список повинен містити принаймні 3 елементи.")
+        raise ValueError("Список повинен містити принаймні 3 елементи")
     return [lst[0], lst[2], lst[-2]]
 
 
