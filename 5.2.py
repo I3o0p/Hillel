@@ -26,7 +26,7 @@ while True:
         print("Введено некоректне число!")
         continue
 
-    continue_calculation = input("Бажаєте продовжити? (y/yes для продовження): ").strip().lower()
+    continue_calculation = input("(y/yes для продовження): ").strip().lower()
     if continue_calculation not in ('y', 'yes'):
         print("Робота калькулятора завершена.")
         break
