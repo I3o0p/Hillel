@@ -1,14 +1,14 @@
-def sewei(lst):
+lists = [
+    [1, 3, 5],
+    [6],
+    []
+]
+
+for lst in lists:
     if not lst:
-        return 0
-    sewei = sum(lst[::2])
-    last = lst[-1]
-    return sewei * last
-
-list1 = [1, 3, 5]
-list2 = [6]
-list3 = []
-
-print(sewei(list1))
-print(sewei(list2))
-print(sewei(list3))
+        result = 0
+    else:
+        sewei = sum(lst[::2])
+        last = lst[-1]
+        result = sewei * last
+    print(result)
