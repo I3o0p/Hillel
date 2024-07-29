@@ -36,5 +36,7 @@ for name in examples:
             is_valid = False
         if char.isupper():
             is_valid = False
+        if char == ' ':
+            is_valid = False
 
     print(f"{name} => {is_valid}")
