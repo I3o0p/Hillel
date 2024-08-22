@@ -1,6 +1,5 @@
 import math
 
-
 class Rectangle:
 
     def __init__(self, width, height):
@@ -28,8 +27,6 @@ class Rectangle:
     def __str__(self):
         return f"Rectangle(width={self.width}, height={self.height})"
 
-
-# Перевірка
 r1 = Rectangle(2, 4)
 r2 = Rectangle(3, 6)
 assert r1.get_square() == 8, 'Test1'
