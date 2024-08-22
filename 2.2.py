@@ -1,12 +1,15 @@
-number = int(input("Введіть 5-значне число: "))
+number = int(input("Введіть 5-ти значне число: "))
 
-ten_thousands, remainder = divmod(number, 10000)
-thousands, remainder = divmod(remainder, 1000)
-hundreds, remainder = divmod(remainder, 100)
-tens, units = divmod(remainder, 10)
+ten_thousands = number // 10000
+thousands = (number // 1000) % 10
+hundreds = (number // 100) % 10
+tens = (number // 10) % 10
+units = number % 10
 
-print(ten_thousands)
-print(thousands)
-print(hundreds)
-print(tens)
-print(units)
+reversed_number = (units * 10000 +
+                   tens * 1000 +
+                   hundreds * 100 +
+                   thousands * 10 +
+                   ten_thousands)
+
+print("Перевернуте число:", reversed_number)
